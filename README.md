@@ -5,4 +5,9 @@ Images from cases of gastrointestinal endoscopy were used. These were simply dia
 Python 3.5.4 or higher with Tensorflow installed
 
 ## Useage
-Run the file runpowershell.py
+Run the file retrain.py
+
+A file "retrained_graph.pb" gets created
+
+Now, run:
+python -m scripts.label_image --graph=/retrained_graph.pb --image=\colon_cancer\cancer\Z.jpg
